@@ -1,6 +1,6 @@
 /* Gerado por ferramentas/site.js (repositório Fardamento). Não editar aqui. */
 (function () {
-  var EXEC = "https://script.google.com/macros/s/AKfycbzU_5KzSvXQSbFgIQI8onh3EJ4Uq6VyPaT-8eWLSIh6OQOT4RIYysiqMbHh5jP4TE-UKg/exec", n = 0;
+  var EXEC = "https://script.google.com/macros/s/AKfycbxlMMTV64YjGc5MglaR1yO3_YnRtDjOdG45mjRVprcuTr8otPqpEp5TwKoXRs-aiG3C/exec", n = 0;
   function perguntar(cb) {
     if (!EXEC) return cb(null);
     var nome = 'fardamentoEstado_' + (++n) + '_' + Date.now(), s = document.createElement('script'), feito = false;
