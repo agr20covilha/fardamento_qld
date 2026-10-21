@@ -2,7 +2,7 @@
 <title>QUA · Fardamento · Agrupamento 20 Covilhã</title><meta name="robots" content="noindex,nofollow"><meta name="description" content="Encomendas de fardamento do Agrupamento 20 Covilhã — Corpo Nacional de Escutas.">
 <link rel="icon" type="image/png" href="icone-180.png"><link rel="apple-touch-icon" sizes="180x180" href="https://agr20covilha.github.io/fardamento_qua/icone-180.png">
 <link rel="manifest" href="manifesto.json"><meta name="theme-color" content="#1D6B54">
-<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="QUA Fardamento"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; frame-src https://script.google.com https://*.googleusercontent.com; script-src 'sha256-dn7lzueDARkX1hf2GBMXyHKff/d+hn9BpvshrBRLVK8='; style-src 'unsafe-inline' https://fonts.googleapis.com; img-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="QUA Fardamento"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; frame-src https://script.google.com https://*.googleusercontent.com; script-src 'sha256-Rd4egkcyEhAAFB7tv8SCmPj/fm9G3sXTPiaCu/Tjclc='; style-src 'unsafe-inline' https://fonts.googleapis.com; img-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <style>html,body{margin:0;height:100%;overflow:hidden;background:#1D6B54}
 iframe{position:fixed;left:0;top:env(safe-area-inset-top,0px);width:100%;height:calc(100% - env(safe-area-inset-top,0px));border:0}
@@ -12,6 +12,7 @@ iframe{position:fixed;left:0;top:env(safe-area-inset-top,0px);width:100%;height:
 </head><body><div id="espera"><img src="icone-180.png" alt=""><span>A abrir o Fardamento…</span></div>
 <iframe id="app" title="Fardamento" src="https://script.google.com/macros/s/AKfycbxlMMTV64YjGc5MglaR1yO3_YnRtDjOdG45mjRVprcuTr8otPqpEp5TwKoXRs-aiG3C/exec" allow="clipboard-write"></iframe>
 <div id="plano-b" hidden>Não abre? <a href="https://script.google.com/macros/s/AKfycbxlMMTV64YjGc5MglaR1yO3_YnRtDjOdG45mjRVprcuTr8otPqpEp5TwKoXRs-aiG3C/exec" target="_top" rel="noopener">Abrir diretamente</a></div>
-<script>var f=document.getElementById('app'),e=document.getElementById('espera');
+<script>if(/[?&]gestao(=|&|$)/.test(location.search)){location.replace("https://script.google.com/macros/s/AKfycbxlMMTV64YjGc5MglaR1yO3_YnRtDjOdG45mjRVprcuTr8otPqpEp5TwKoXRs-aiG3C/exec?gestao");}
+var f=document.getElementById('app'),e=document.getElementById('espera');
 f.addEventListener('load',function(){setTimeout(function(){e.className='fora'},300)});
 setTimeout(function(){e.className='fora';document.getElementById('plano-b').hidden=false},9000);</script></body></html>
