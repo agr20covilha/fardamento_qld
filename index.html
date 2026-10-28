@@ -2,19 +2,30 @@
 <title>QLD · Fardamento · Agrupamento 20 Covilhã</title><meta name="robots" content="noindex,nofollow"><meta name="description" content="Encomendas de fardamento do Agrupamento 20 Covilhã — Corpo Nacional de Escutas.">
 <link rel="icon" type="image/png" href="icone-180.png"><link rel="apple-touch-icon" sizes="180x180" href="https://agr20covilha.github.io/fardamento_qld/icone-180.png">
 <link rel="manifest" href="manifesto.json"><meta name="theme-color" content="#1D6B54">
-<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="QLD Fardamento"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; frame-src https://script.google.com https://*.googleusercontent.com; script-src 'sha256-zFEqB1fisi3zfmhh1y8Cw2GEo5C6gGscmj60CK0fxxQ='; style-src 'unsafe-inline' https://fonts.googleapis.com; img-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<style>html,body{margin:0;height:100%;overflow:hidden;background:#1D6B54}
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="QLD Fardamento"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; frame-src https://script.google.com https://*.googleusercontent.com; script-src 'sha256-36Ikk+hlNHBGI4xhdnVNZIA3y8FyMTYEY6AsXmiABO0=' https://script.google.com https://*.googleusercontent.com; font-src https://fonts.gstatic.com; style-src 'unsafe-inline' https://fonts.googleapis.com; img-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nunito+Sans:wght@400;600&display=swap">
+<style>#breve{position:fixed;inset:0;overflow:auto;display:grid;place-items:center;background:#F6F7F4;color:#15241C;font:16px/1.55 "Nunito Sans",sans-serif;padding:20px}
+#breve[hidden]{display:none}#breve main{max-width:420px} #breve .l{display:flex;gap:14px;align-items:center;margin-bottom:20px} #breve .l img{width:60px;height:60px;border-radius:15px}
+#breve h1{font:800 28px Montserrat,sans-serif;margin:0} #breve .c{background:linear-gradient(150deg,#1D6B54,#15452f);color:#fff;border-radius:18px;padding:22px}
+#breve .c small{letter-spacing:.12em;text-transform:uppercase;opacity:.85;font-weight:600} #breve .c h2{font:800 20px Montserrat,sans-serif;margin:6px 0}
+#breve a{color:#1D6B54}
+html,body{margin:0;height:100%;overflow:hidden;background:#1D6B54}
 iframe{position:fixed;left:0;top:0;width:100%;height:100%;border:0}
 #medida{position:fixed;top:0;left:0;width:0;height:0;visibility:hidden;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 #espera{position:fixed;inset:0;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;background:#1D6B54;color:#fff;font:600 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;transition:opacity .35s}
 #espera img{width:76px;height:76px;border-radius:18px}#espera.fora{opacity:0;pointer-events:none}</style>
 </head><body><div id="medida"></div><div id="espera"><img src="icone-180.png" alt=""><span>A abrir o Fardamento…</span></div>
-<iframe id="app" title="Fardamento" src="https://script.google.com/macros/s/AKfycbxlMMTV64YjGc5MglaR1yO3_YnRtDjOdG45mjRVprcuTr8otPqpEp5TwKoXRs-aiG3C/exec" allow="clipboard-write"></iframe>
+<div id="breve" hidden><main><div class="l"><img src="icone-180.png" alt=""><div><h1>Fardamento</h1>Agrupamento 20 Covilhã · CNE</div></div>
+<div class="c"><small>QLD · ambiente de testes · Em breve</small><h2>As encomendas de fardamento vão passar a fazer-se aqui.</h2><p>Até lá, siga as indicações do agrupamento.</p></div>
+<p><a href="https://agr20covilha.github.io/">← Agrupamento 20 Covilhã</a></p><p style="font-size:12px;color:#7d8a83">© 2026 Agrupamento 20 Covilhã · Corpo Nacional de Escutas · Todos os direitos reservados</p></main></div>
+<iframe id="app" title="Fardamento" data-src="https://script.google.com/macros/s/AKfycbxlMMTV64YjGc5MglaR1yO3_YnRtDjOdG45mjRVprcuTr8otPqpEp5TwKoXRs-aiG3C/exec" allow="clipboard-write"></iframe>
 <script>if(/[?&]gestao(=|&|$)/.test(location.search)){location.replace("https://script.google.com/macros/s/AKfycbxlMMTV64YjGc5MglaR1yO3_YnRtDjOdG45mjRVprcuTr8otPqpEp5TwKoXRs-aiG3C/exec?gestao");}
-var f=document.getElementById('app'),e=document.getElementById('espera'),j=null;
-f.addEventListener('load',function(){setTimeout(function(){e.className='fora'},300)});
-setTimeout(function(){e.className='fora'},9000);
+var f=document.getElementById('app'),e=document.getElementById('espera'),j=null,decidido=false;
+function decidir(r){if(decidido)return;decidido=true;if(r&&r.lancada===false){document.getElementById('breve').hidden=false;f.remove();e.className='fora';return}f.src=f.getAttribute('data-src')}
+window.fardamentoLancada=function(r){decidir(r)};setTimeout(function(){decidir(null)},6000);
+(function(){var s=document.createElement('script');s.src=f.getAttribute('data-src')+'?estado=1&cb=fardamentoLancada';s.onerror=function(){decidir(null)};document.head.appendChild(s)})();
+f.addEventListener('load',function(){if(f.src)setTimeout(function(){e.className='fora'},300)});
+setTimeout(function(){e.className='fora'},15000);
 function margens(){if(!j)return;var c=getComputedStyle(document.getElementById('medida'));try{j.postMessage({fardamento:'margens',topo:parseFloat(c.paddingTop)||0,base:parseFloat(c.paddingBottom)||0},'*')}catch(x){}}
 function ajustar(){var curta=navigator.standalone&&innerHeight>innerWidth&&screen.height>innerHeight;if(curta)f.style.height=screen.height+'px';else f.style.removeProperty('height');margens()}
 addEventListener('message',function(m){if(m&&m.data&&m.data.fardamento==='pronta'){j=m.source;e.className='fora';ajustar()}});
